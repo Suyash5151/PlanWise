@@ -4,17 +4,6 @@ import google.generativeai as genai
 
 api_key = st.secrets["GEMINI_API_KEY"]
 genai.configure(api_key=api_key)
-st.markdown("""
-    <style>
-    .stApp {
-        background-color: #e6ecf0;
-    }
-    </style>
-    """, unsafe_allow_html=True)
-
-
-
-genai.configure(api_key="AIzaSyDbh4GAj6DzApAqtUtfbRdAl7fQ71o8oZM")  
 
 model = genai.GenerativeModel("gemini-2.5-flash")
 
